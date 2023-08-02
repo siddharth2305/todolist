@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="todo-app">
+      <h1 style="color: whitesmoke">To Do List</h1>
+
+      <div id="container">
+        <div class="input-container">
+          <input
+            type="text"
+            name="todo"
+            class="todo-input"
+            id="todo-input"
+            placeholder="Add Task"
+          />
+          <button class="add-btn" id="add-btn">
+            <i class="fa-sharp fa-solid fa-circle-plus"></i>
+          </button>
+          <span
+            ><p>Task Count: <span id="count">0</span></p></span
+          >
+        </div>
+
+        <ul class="todo-tasks" id="todo-tasks"></ul>
+      </div>
+
+      <div id="filter-btns">
+        <div id="completed">Completed</div>
+        <div id="pending">Pending</div>
+        <div id="all">All</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
